@@ -1,0 +1,59 @@
+h1
+{
+	text-align:center;
+	font-size:35px;
+	font-family:'Anton', cursive;
+	border-left-width:100px;
+	display:inline;
+}
+.g
+{
+	font-size:20px;
+	background-color:#BCAAA4;
+	width:270px;
+}
+.a
+{
+	font-family:'Anton', sans-sarif;
+	font-size:19px;
+}
+.b
+{
+	font-family:'Anton', cursive;
+	font-size:15px;
+}
+div
+{
+	font-family:'Anton', cursive;
+	font-size:20px;
+}
+input[type=text], select 
+{
+    padding: 6px 30px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=password], select 
+{
+    padding: 6px 30px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+p
+{
+	margin:0;
+	color:black;
+}
+.head
+{
+	color:#2E7D32;
+}
+a
+{
+	color:blue;
+}

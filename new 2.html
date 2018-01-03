@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>FORM</title>
+<script>
+function check()
+{ 
+     var a=document.form.pass.value;
+	 var m=document.form.email.value;
+     var n=document.form.number.value;
+	 var at=m.indexOf('@');
+     var dot=m.lastIndexOf('.');
+	 /*if(isNAN(n))
+	 {
+	     alert('Invalid number');
+		 return false;
+	 }*/
+	 if(a.length<8)
+		 {
+		 alert("Password is short");
+		 return false;
+		 }
+	 if(at<1 || dot+2>=m.length || dot<at+2)
+     {
+	     alert('Invalid email');
+		 return false;
+	 }
+	 return true;
+}
+
+</script>
+</head>
+<body>
+<form name="form" onsubmit="return check();" method="post">
+Name:<input type="text" name="name"><br/><br/>
+Email:<input type="text" name="email"><br/><br/>
+Number:<input type="text" name="number"><br/><br/>
+Password:<input type="password" name="pass">
+<select>
+<option selected="selected" disabled="disabled">Day</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+</select>
+<select>
+<option selected="selected" disabled="disabled">Month</option>
+<option>Jan</option>
+<option>Feb</option>
+<option>Mar</option>
+</select>
+<select>
+<option selected="selected" disabled="disabled">Year</option>
+<option>1997</option>
+<option>1998</option>
+<option>1999</option>
+</select><br/><br/>
+<input type="submit" name="submit" value="Submit">
+</body>
+</html>
